@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perry AI</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="theme-coffee">
+
+  <!-- SYSTEM PANEL -->
+  <div class="system-panel">
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+      <div class="system-title">
+        <i class="fa-solid fa-microchip"></i>
+        <input id="botName" value="Perry AI" />
+      </div>
+
+      <div class="controls">
+        <select id="themeSelect">
+          <option value="theme-coffee" selected>Coffee</option>
+          <option value="theme-ghost">Ghost White</option>
+          <option value="theme-midnight">Midnight Blue</option>
+          <option value="theme-twilight">Twilight Purple</option>
+          <option value="theme-moonstone">Moonstone Gray</option>
+          <option value="theme-ocean">Ocean Breeze</option>
+          <option value="theme-aurora">Aurora Green</option>
+          <option value="theme-glitch">Glitch Purple</option>
+          <option value="theme-candy">Cotton Candy</option>
+          <option value="theme-mars">Martian Red</option>
+        </select>
+      </div>
+    </div> <!-- ✅ top-bar CLOSED -->
+
+    <!-- CHAT -->
+    <div class="chat-area" id="chatMessages">
+      <div class="message bot">
+        <span class="sender">Perry AI</span>
+        <p>System initialized. Awaiting command.</p>
+      </div>
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-bar">
+      <textarea id="userInput" placeholder="Type command..."></textarea>
+      <button id="sendBtn">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+
+  </div> <!-- ✅ system-panel CLOSED -->
+
+  <script src="script.js"></script>
+</body>
+</html>
